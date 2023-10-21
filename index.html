@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="CSS/style.css"
         >
         <title>Portfolio</title>
     </head>
@@ -20,15 +20,72 @@
     <section class="heroIMG">
         <div class="content">
             <img class="portrait" src="Images/selfie crop.png"></img>
-            <p>
+            <h4>
                 I create joyful and intuitive user-centered designs. 
                 Passionate about designing products that have a diverse and unique impact. 
                 Strengths in creativity, teamwork, and project management. 
                 A background in accounting, education, and art with an eye for 
                 detailed, accessible, and aesthetic design.
-            </p>
-            <button>Download Resume</button>
+            </h4>
+            <button class="resume">Download Resume</button>
         </div>
+    </section>
+
+
+    <!-- My UX Skills Section coded using CSS flex -->
+
+    <section class="mySkills">
+        <h1>My UX Skills</h1>
+        <div class="flexContainer">
+            <div class="skillCenter">
+                <img src="Images/user research.png">
+            </div>
+            <div class="skillCenter">
+                <img src="Images/user empathy.png">
+            </div>
+            <div class="skillCenter">
+                <img src="Images/user interviews.png">
+            </div>
+        </div>
+        <div class="flexContainer">
+            <h3>USER EMPATHY</h3>
+            <h3>USER RESEARCH</h3>
+            <h3>QUALITATIVE INTERVIEWS</h3>
+        </div>
+        <div class="flexContainer">
+            <p>My user research targets demographics that balance the organization’s goals with uncovering unexpected opportunities, while centering the user as the MVP. I uncover the most important pain points and identify elegant solutions.
+            </p>
+            <p>By centering the needs and goals of the organization’s users, I can find the best way to deliver a product that is intuitive to use and creates a lasting impression, thereby increasing customer retention and satisfaction.
+            </p>
+            <p>I create user interviews that use thoughtful, qualitative questions to uncover the specific thought-processes of the customer base, the most important pain points, and possible opportunities for improvement and growth.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- My Work Section Constructed using CSS Grid -->
+
+    <section class="myWork">
+        <h1>My Work</h1>
+        <div class="workGrid">
+            <div><img class="myWorkImages" src="Images/dpl screenshot.png"></div>
+            <div><img class= "myWorkImages" src="Images/center on colfax screenshot.png"></div>
+            <div>
+                <h4>Denver Public Library</h4>
+                <p>A Website Redesign 
+                Highlighting Diverse Services 
+                for Diverse Communities</p>
+                <button>View Project</button>
+            </div>
+            <div>
+                <h4>The Center on Colfax</h4>
+                <p>A Welcoming and Celebratory Website 
+                    Redesign</p>
+                <button>View Project</button>
+            </div>
+        </div>
+        <h3>View All Projects</h3>
+
     </section>
     <footer>
         <ul class="footerNav">

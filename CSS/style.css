@@ -1,6 +1,8 @@
 .inline-block {
     display: inline-block;
     vertical-align: top;
+    margin:auto;
+    width: 25% 10% 10% 10% 10%;
 }
 .logo {
     width: 23%;
@@ -26,12 +28,26 @@ ul {
 footer {
     background-color: #373738;
 }
-p {
-    color:blue;
+h4 {
+    text-align:justify;
+    text-justify:inter-word;
+    padding: 10px;
 }
+
+p {
+    text-align:center;
+    text-justify:inter-word;
+    padding: 30px;
+}
+
+.resume {
+    margin-left: 35%;
+}
+
 .portrait {
     width: 25%;
     height: auto;
+    margin-left: 35%;
 }
 .footerNav {
     display: inline-block;
@@ -42,56 +58,69 @@ p {
     vertical-align: top;
     color: white;
 }
-/* Grid CSS */
-
-#heroGrid { 
-    margin: 0px 5%;
-    display: grid;
-    min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas:
-    "featuredProduct secondaryProduct"
-    "featuredProduct CTA"
-    }
-    
-    #featuredProduct {
-        grid-area: featuredProduct;
-        background-image: url("../images/furniture1.png");
-    }
-    
-    #secondaryProduct {
-        grid-area: secondaryProduct;
-        background-image: url("../images/furniture2.png");
-    }
-    
-    #CTA {
-        grid-area: CTA;
-        justify-content: 0px 5%;
-        cursor: pointer;
-        background-image: url("../images/woodbg.png");
-    }
-    
-    #headline {
-        border-bottom: 5px solid #FF6200;
-        background-color: rgba(225,225,225,0.8);
-        position: aboslute;
-        right: -50px;
-        top: 100px;
-        padding: 25px;
-        max-width: 550px;
-        z-index: 100;
-    }
-
-
-    .heroGridArea {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
+    .flexContainer {
         display: flex;
-        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
     
+    .skillCenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        text-align: center; 
+        margin-left: 5%;  
+    }
+    h4 {
+        text-align: center;
+    }
+
+
+    .workGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "dplImage dplDescription"
+       "cocImage cocDescription";
+       margin: 20px;
+    }
+
+    .myWorkImages {
+        width: 50%;
+        padding: 3%;
+        margin-left: 20%;
+    }
     
+button {
+    margin-left: 45%;
+}
+@media screen and (max-width: 600px) {
+    .flexContainer{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;}
+
+        .workGrid {
+            display:grid;
+            grid-template-columns: 1fr !important;
+            grtid-template-rows: 300px 300px 300px 300px;
+            grid-template-areas: 
+            "dplImage" 
+            "dplDescription"
+           "cocImage" 
+           "cocDescription";
+           margin: 20px;
+        }
+}
